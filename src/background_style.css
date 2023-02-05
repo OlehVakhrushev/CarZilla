@@ -1,0 +1,19 @@
+.main-container {
+    position: relative;
+}
+
+.main-container > div {
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.bg {
+    background-image: url(./logo/background.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}

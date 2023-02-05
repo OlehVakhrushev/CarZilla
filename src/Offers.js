@@ -1,5 +1,7 @@
 import React from "react";
 import { v4 as uuidv4 } from 'uuid';
+import * as cars_photos from './cars_photos'
+
 
 const Offers = () => {
 
@@ -7,14 +9,15 @@ const Offers = () => {
         {
             id: uuidv4(),
             brand: 'Volvo',
-            model: 'V50',
+            model: 'V60',
             specs: {
                 hp: 332,
                 engine: 'V6',
                 type: 'Sedan'
             },
             price: 34000,
-            description: 'Fast and comfortable cars, fits for family, highest safety rating'
+            description: 'Fast and comfortable cars, fits for family, highest safety rating',
+
         },
         {
             id: uuidv4(),
