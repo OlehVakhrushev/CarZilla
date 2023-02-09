@@ -3,8 +3,8 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Navigation from "./pages/Navigation";
 import Main from "./pages/Main";
-import background from './logo/background.jpg'
-import background_style from './background_style.css'
+import "bootstrap/dist/css/bootstrap.min.css"
+
 
 function App() {
     return (
