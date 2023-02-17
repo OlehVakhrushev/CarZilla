@@ -1,6 +1,6 @@
 import React from "react";
 import { v4 as uuidv4 } from 'uuid';
-import * as cars_photos from './cars_photos'
+
 
 
 const Offers = () => {
@@ -17,6 +17,7 @@ const Offers = () => {
             },
             price: 34000,
             description: 'Fast and comfortable cars, fits for family, highest safety rating',
+
 
         },
         {
@@ -72,3 +73,5 @@ const Offers = () => {
     );
 }
 export default Offers;
+
+// <br/> <img src={el.picture} alt={`Picture of ${el.brand} ${el.model}`} style={{width: '100px', height: '90px'}}/>

@@ -25,7 +25,8 @@ const Navigation = () => {
                             <Link to="/" style={{ marginRight: '10px' }}>Home</Link>
                             <Link to="/about" style={{ marginRight: '10px' }}>About</Link>
                             <Link to="/contacts" style={{ marginRight: '10px' }}>Contacts</Link>
-                            <Link to="/photos">Photos</Link>
+                            <Link to="/photos"  style={{ marginRight: '10px' }}>Photos</Link>
+                            <Link to="/repair" >Repair Shop</Link>
                         </Nav>
                         <Form inline="true" className="d-flex align-items-center">
                             <FormControl
@@ -42,3 +43,5 @@ const Navigation = () => {
     );
 }
 export default Navigation;
+
+
