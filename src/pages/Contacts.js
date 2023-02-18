@@ -1,9 +1,18 @@
 import React from "react";
+import background from "../logo/background.jpg";
 
 const Contacts = () => {
     return (
         <div>
-            <h1>Here Contacts</h1>
+            <div style={{
+                backgroundImage: `url(${background})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                height: '100vh',
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
+            </div>
         </div>
     );
 }

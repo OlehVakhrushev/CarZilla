@@ -3,8 +3,14 @@ import logo from '../logo/logo.jpg'
 import NavbarToggle from "react-bootstrap/NavbarToggle";
 import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import {Button, Container, Form, FormControl, Nav, Navbar, NavbarBrand} from "react-bootstrap";
-import {Link} from "react-router-dom";
+import {Link, Route, Routes} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from "./Home";
+import About from "./About";
+import Contacts from "./Contacts";
+import Photos from "./Photos";
+import Repair from "../repair/Repair";
+import SiteName from "../SiteName";
 
 const Navigation = () => {
     return (
@@ -12,6 +18,7 @@ const Navigation = () => {
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark">
                 <Container>
                     <NavbarBrand href="/">
+                        <SiteName className='site-name' />
                         <img src={logo}
                              height="50"
                              width="60"
@@ -39,6 +46,13 @@ const Navigation = () => {
                     </NavbarCollapse>
                 </Container>
             </Navbar>
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contacts" element={<Contacts />} />
+                <Route path="/photos" element={<Photos />} />
+                <Route path="/repair" element={<Repair />} />
+            </Routes>
         </>
     );
 }

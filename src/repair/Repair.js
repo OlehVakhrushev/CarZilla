@@ -1,7 +1,7 @@
 import React from 'react';
 import {v4 as uuidv4} from 'uuid'
-import Menu from "./Menu";
 import Categorie from "./Categorie";
+import background from "../logo/background.jpg";
 
 function Repair() {
     const categories = [
@@ -53,49 +53,49 @@ function Repair() {
             date: "5.01.2023",
             value: 120,
             category: "Engine",
-            description: "Ralphs grocery store"
+            description: "Spark plugs"
         },
         {
             id: uuidv4(),
             date: "6.01.2023",
             value: 2550,
             category: "Transmission",
-            description: "landlord"
+            description: "Converter repair"
         },
         {
             id: uuidv4(),
             date: "6.01.2023",
             value: 94,
             category: "Wheels",
-            description: "Zara"
+            description: "Rim repair"
         },
         {
             id: uuidv4(),
             date: "6.01.2023",
             value: 175,
             category: "Tires",
-            description: "Macy`s"
+            description: "2 Tires"
         },
         {
             id: uuidv4(),
             date: "8.01.2023",
             value: 65,
             category: "Cooling System",
-            description: "At&t"
+            description: "Leak repair"
         },
         {
             id: uuidv4(),
             date: "8.01.2023",
             value: 875,
             category: "Brakes",
-            description: "The J. Morey Company"
+            description: "Rotors"
         },
         {
             id: uuidv4(),
             date: "9.01.2023",
             value: 88,
             category: "Engine",
-            description: "Ralphs grocery store"
+            description: "Oil"
         },
         {
             id: uuidv4(),
@@ -109,49 +109,49 @@ function Repair() {
             date: "11.01.2023",
             value: 23,
             category: "Engine",
-            description: "7 Eleven"
+            description: "Oil Filter"
         },
         {
             id: uuidv4(),
             date: "11.01.2023",
             value: 55,
             category: "Cooling System",
-            description: "LA Fitness"
+            description: "Refill"
         },
         {
             id: uuidv4(),
             date: "11.01.2023",
             value: 55,
             category: "Electrical",
-            description: "Cinemark Playa Vista and XD"
+            description: "Fuse check"
         },
         {
             id: uuidv4(),
             date: "12.01.2023",
             value: 65,
             category: "Transmission",
-            description: "Auto Fuels Gas Station"
+            description: "Filter"
         },
         {
             id: uuidv4(),
             date: "12.01.2023",
             value: 115,
             category: "Brakes",
-            description: "The Roof on Wilshire"
+            description: "Brake pads"
         },
         {
             id: uuidv4(),
             date: "11.01.2023",
             value: 23,
             category: "Engine",
-            description: "Traders Joes"
+            description: "Air filter"
         },
         {
             id: uuidv4(),
             date: "12.01.2023",
             value: 17,
             category: "Tires",
-            description: "Joe Bell Express Car Wash"
+            description: "Pump the tires"
         },
     ]
 
@@ -176,7 +176,14 @@ function Repair() {
 
     return (
         <div>
-            <Menu menu={menu}/>
+            <div style={{
+                backgroundImage: `url(${background})`,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                height: '100vh',
+                alignItems: 'center',
+                justifyContent: 'center'
+            }}>
             <h1> Expenses: </h1>
             <div className="row align-items-start">
                 {categories.map(el=>
@@ -189,8 +196,8 @@ function Repair() {
                 }
 
             </div>
-
         </div>
+    </div>
     );
 }
 

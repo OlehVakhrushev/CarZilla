@@ -17,3 +17,13 @@
     height: 100%;
     background-size: cover;
 }
+
+.site-name {
+    float: right;
+}
+
+body {
+    background-image: url(./logo/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

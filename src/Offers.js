@@ -1,5 +1,9 @@
 import React from "react";
 import { v4 as uuidv4 } from 'uuid';
+import Bmw from './img/Bmw.jpg';
+import Chrysler from './img/Chrysler.jpg';
+import Honda from './img/Honda.jpg';
+import Volvo from './img/Volvo.jpg';
 
 
 
@@ -8,6 +12,7 @@ const Offers = () => {
     const cars = [
         {
             id: uuidv4(),
+            img: Volvo,
             brand: 'Volvo',
             model: 'V60',
             specs: {
@@ -18,10 +23,10 @@ const Offers = () => {
             price: 34000,
             description: 'Fast and comfortable cars, fits for family, highest safety rating',
 
-
         },
         {
             id: uuidv4(),
+            img: Chrysler,
             brand: 'Chrysler',
             model: 'Pacifica',
             specs: {
@@ -34,6 +39,7 @@ const Offers = () => {
         },
         {
             id: uuidv4(),
+            img: Bmw,
             brand: 'BMW',
             model: 'M5',
             specs: {
@@ -46,6 +52,7 @@ const Offers = () => {
         },
         {
             id: uuidv4(),
+            img: Honda,
             brand: 'Honda',
             model: 'Civic',
             specs: {
@@ -67,6 +74,7 @@ const Offers = () => {
                     <br/> <i>{el.specs.hp + ' ' + el.specs.engine + ' ' + el.specs.type}</i>
                     <br/> {el.description}
                     <br/> Price: $ {el.price}
+                    <br/> <img src={el.img} alt="img" height={100}/>
                 </li>
             ))}
         </ul>
